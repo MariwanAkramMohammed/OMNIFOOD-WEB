@@ -1,0 +1,357 @@
+/* in media queries 1rem doesnot equal to 10px as in html
+but you can use em instead of rem 
+1344/16=84em  due to em equal to 16px in media queries
+but you can use rem within quere css code
+*/
+
+
+
+
+
+
+
+       /* ************************** */
+  /* Media for 1200px (smaller screen) */
+       /* ************************** */
+
+
+
+
+
+@media (max-width:84em){
+.hero{
+   max-width:120rem;
+  }
+.heading-primary{
+  font-size:4.4rem;
+  }
+.Gallary{
+grid-template-columns:repeat(2,1fr)
+  }   
+}
+       /* ************************** */
+  /* Media for 1200px (landscape tablet) */
+       /* ************************** */
+ 
+
+@media (max-width:75em){
+  html{
+    font-size:56.25%;
+  }
+  .grid{
+    column-gap:4.8rem;
+    row-gap:6.4rem;
+  }
+.heading-secondary{
+  font-size:3.6rem;
+}
+.heading-tertiary{
+  font-size:2.4rem;
+}
+
+.haeder{
+  padding:0 3.2rem;
+}
+.hero{
+  gap:4.8rem;
+}
+.testimonials-container{
+  padding:9.6rem 3.2rem;
+}
+
+
+}
+
+       /* ************************** */
+  /* Media for 944px ( tablet) */
+       /* ************************** */
+
+
+@media (max-width:59em){
+  /* for this point we want to pixel become a 8 form each ream 
+      8/16=0,5=50%
+  
+  */
+html{
+  font-size:50%;
+
+}
+.hero{
+  grid-template-columns:1fr;
+  padding:0 8rem;
+  gap:6.4rem;
+}
+.hero-img{
+  width:60%;
+
+}
+.hero-img-box,.hero-text-box{
+  text-align:center;
+}
+.delivered_meals{
+  justify-content:center;
+  margin-top:3.2rem;
+}
+.logos img{
+  height:2.4rem;
+}
+
+
+
+.number-text{
+  font-size:7.4rem;
+}
+.meal-cont{
+  padding:2.4rem 3.2rem 3.2rem 3.2rem;
+}
+
+.section-testimonials{
+  grid-template-columns:1fr;
+}
+.Gallary{
+  grid-template-columns:repeat(6,1fr);
+}
+.cta{
+  grid-template-columns:3fr 2fr;
+}
+.cta-form{
+  grid-template-columns:1fr;
+}
+
+.btn-form{
+  margin-top:2.2rem;
+}
+
+
+.btn-mobile{
+  display:block;
+}
+
+.main_nav{
+  background-color:rgba(255, 255, 255, 0.97);
+  position:absolute;
+  top:0;
+  left:0;
+   
+  width:100%;
+  height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all 2s ease-out;
+
+
+/* by translate */
+transform:translatex(100%);
+
+
+
+
+  /* don't use this cause this is't allowed 
+  you to make animation or transition */
+  /* displaY:none; */
+
+
+
+  /* use 3 steps to hide and show your element */
+  /* step 1 */
+  opacity:0;
+
+  /* step 2 */
+  pointer-events:none;
+   
+  /* step 3 */
+ visibility:none;
+
+
+}
+.nav-open .main_nav{
+  
+/* by translate */
+transform:translatex(0);
+
+
+
+
+  /* to show again */
+  /* step 1 */
+opacity:1;
+
+/* step 2 */
+pointer-events:auto;
+
+/* step 3 */
+visibility:visible;
+
+
+}
+.main-nav-list{
+  flex-direction:column;
+  gap:4.8rem;
+}
+
+.main-nav-link:link,.main-nav-link:visited{
+  font-size: 3rem;
+}
+.icon-mobile-nav[name="menu-outline"]{
+  display:none;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+  display:block;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+       /* ************************** */
+  /* Media for 704px (Smaller tablet) */
+       /* ************************** */
+
+
+@media (max-width:44em){
+
+  .grid--3,.grid--4{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  .diets{
+    grid-column:1/-1;
+    justify-self:center;
+  }
+.secondary-heading{
+  margin-bottom:4.8rem;
+}
+
+.pricing-plan{
+  width:100%;
+
+}
+.grid-footer{
+  grid-template-columns:repeat(6,1fr);
+
+}
+
+
+
+.logo-col,
+.address-col{
+  grid-column:span 3;
+
+}
+.nav-col{
+  grid-row:1;
+  grid-column:span 2;
+  margin-bottom:3.2rem;
+
+}}
+
+
+       /* ************************** */
+  /* Media for 550px (ohones) */
+       /* ************************** */
+@media (max-width:34em){
+
+  .grid{
+    row-gap:4.8rem;
+  }
+  .grid--2,
+.grid--3,
+.grid--4{
+  grid-template-columns: 1fr;
+}
+
+
+
+.section-hero {
+ padding:2.4rem 0 6.4rem;
+
+}
+.hero {
+  padding:0 3.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  padding:2.4rem 1.6rem;
+}
+
+.hero-img{
+  width:80%;
+}
+.logos img{
+  height:1.2rem;
+}
+
+.step-img-box:nth-child(2){
+grid-row:1;
+}
+.step-img-box:nth-child(6){
+  grid-row:5;
+  }
+
+.step-img-box{
+  transform:translatey(2.4rem);
+}
+.testimonials{
+  grid-template-columns:1fr;
+}
+.Gallary{
+grid-template-columns: repeat(4,1fr);
+gap:1.2rem;
+}
+
+
+.cta{
+  grid-template-columns: 1fr;
+}
+.cta--text--box{
+padding:3.2rem;
+}
+.cta--img--box{
+  height:32rem;
+  grid-row:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* - font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+   - spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
